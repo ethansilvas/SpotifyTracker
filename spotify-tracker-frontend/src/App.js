@@ -9,15 +9,18 @@ class App extends Component {
             <Router>
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <Link to="/" className="navbar-brand">Spotify Tracker</Link>
+                        <Link to="/" className="navbar-brand">SpotifyTracker</Link>
                         <div className="collpase navbar-collapse">
                         <ul className="navbar-nav mr-auto">
                             <li className="navbar-item">
-                            <Link to="/" className="nav-link">All Songs</Link>
+                            <Link to="/" className="nav-link">Login</Link>
                             </li>
                         </ul>
                         </div>
                     </nav>
+                    <br />
+                    
+                    <Route path="/" exact component={Login} />
                 </div>
             </Router>
         );
